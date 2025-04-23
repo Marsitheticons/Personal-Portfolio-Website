@@ -10,61 +10,24 @@
     </body>
   </section>
   <section>
-  <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box;}
-  
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
-</head>
+  <!DOCTYPE html>
+<html>
 <body>
 
-<h3>Contact Form</h3>
+<h2>HTML Forms</h2>
 
-<div class="container">
-  <form action="/action_page.php">
-    
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name..">
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email..">
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Write a message.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
+</body>
+</html>
 </section>
 </body>
 </html>
